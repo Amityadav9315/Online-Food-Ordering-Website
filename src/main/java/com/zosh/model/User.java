@@ -34,4 +34,5 @@ public class User {
     @OneToMany
     private List<Order> orders=new ArrayList<>();
     private List<RestaurantDto>favorites=new ArrayList();
+
 }
