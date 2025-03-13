@@ -2,6 +2,7 @@ package com.zosh.model;
 
 
 import com.fasterxml.jackson.annotation.JsonIgnore;
+import com.zosh.dto.RestaurantDto;
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
 import lombok.Data;
@@ -32,4 +33,5 @@ public class User {
     @JsonIgnore
     @OneToMany
     private List<Order> orders=new ArrayList<>();
+    private List<RestaurantDto>favorites=new ArrayList();
 }
