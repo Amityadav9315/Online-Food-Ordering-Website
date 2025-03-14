@@ -11,12 +11,10 @@ import lombok.NoArgsConstructor;
 
 @Data
 @Entity
-@NoArgsConstructor
 @AllArgsConstructor
-public class OrderItem {
+@NoArgsConstructor
+public class Food {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
     private Long id;
-
-    private Food food;
 }

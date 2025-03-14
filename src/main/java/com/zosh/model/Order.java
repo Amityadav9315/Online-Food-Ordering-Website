@@ -2,10 +2,17 @@ package com.zosh.model;
 
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import jakarta.persistence.*;
+import lombok.AllArgsConstructor;
+import lombok.Data;
+import lombok.NoArgsConstructor;
+import lombok.NonNull;
 
 import java.util.Date;
 import java.util.List;
 
+@Data
+@NoArgsConstructor
+@AllArgsConstructor
 @Entity
 public class Order {
 
@@ -32,6 +39,12 @@ public class Order {
 
     @OneToMany
     private List<OrderItem> items;
+
+    //private Payment payment;
+
+    private int totalItem;
+
+    private int totalPrice;
 
 
 
