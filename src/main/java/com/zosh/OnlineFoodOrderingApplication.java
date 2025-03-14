@@ -8,7 +8,8 @@ import org.springframework.http.converter.json.GsonBuilderUtils;
 public class OnlineFoodOrderingApplication {
 
 
-	public static void main(String[] args) {
+	public static void main(String[] args)
+	{
 		SpringApplication.run(OnlineFoodOrderingApplication.class, args);
 	}
 
