@@ -1,2 +1,13 @@
-package com.zosh.model;public class ContactInformation {
+package com.zosh.model;
+
+public class ContactInformation {
+
+    private String email;
+
+    private  String mobile;
+
+    private String twitter;
+
+    private  String instagram;
+
 }

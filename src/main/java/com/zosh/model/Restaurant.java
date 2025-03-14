@@ -6,6 +6,9 @@ import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
+import java.util.ArrayList;
+import java.util.List;
+
 @Data
 @Entity
 @NoArgsConstructor
@@ -24,6 +27,13 @@ public class Restaurant {
     private  String description;
     private String cuisineType;
 
-    @ManyToOne
+    @OneToOne
     private Address address;
+
+@Embedded
+    private  ContactInformation contactInformation;
+
+    private  String openingHours;
+
+    private List<Order> orders=new ArrayList<>();
 }
