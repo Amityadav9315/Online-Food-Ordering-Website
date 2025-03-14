@@ -6,6 +6,7 @@ import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
+import java.util.ArrayList;
 import java.util.List;
 
 @Data
@@ -33,5 +34,11 @@ public class Food {
 
     @ManyToOne
     private  Restaurant restaurant;
+
+    private  boolean isVegetarian;
+    private  boolean isSeasonal;
+
+    @ManyToMany
+    private List<IngredientsItem> ingredients =new ArrayList<>();
 
 }
