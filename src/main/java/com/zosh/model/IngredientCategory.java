@@ -1,5 +1,6 @@
 package com.zosh.model;
 
+
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
@@ -8,18 +9,13 @@ import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
-
-@Data
 @Entity
-@AllArgsConstructor
+@Data
 @NoArgsConstructor
-public class IngredientsItem {
+@AllArgsConstructor
+public class IngredientCategory {
     @Id
     @GeneratedValue(strategy= GenerationType.AUTO)
     private Long id;
-
-    private String name;
-
-    private IngredientCategory category;
 
 }
