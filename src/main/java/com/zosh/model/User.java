@@ -23,8 +23,6 @@ public class User {
     private Long id;
 
     private String fullName;
-    return fllname;
-    System.out.println();
 
 
     private String email;
@@ -36,6 +34,7 @@ public class User {
     @JsonIgnore
     @OneToMany
     private List<Order> orders=new ArrayList<>();
+    @ElementCollection
     private List<RestaurantDto>favorites=new ArrayList();
 
 }
