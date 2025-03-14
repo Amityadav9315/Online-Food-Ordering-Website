@@ -4,6 +4,7 @@ import com.fasterxml.jackson.annotation.JsonIgnore;
 import jakarta.persistence.*;
 
 import java.util.Date;
+import java.util.List;
 
 @Entity
 public class Order {
@@ -28,6 +29,9 @@ public class Order {
     private Date  createdAt;
     @ManyToOne
     private Address deliveryAddress;
+
+    @OneToMany
+    private List<OrderItem> items;
 
 
 
