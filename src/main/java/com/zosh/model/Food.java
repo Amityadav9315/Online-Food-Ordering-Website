@@ -14,6 +14,7 @@ import java.util.List;
 @Entity
 @AllArgsConstructor
 @NoArgsConstructor
+
 public class Food {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
