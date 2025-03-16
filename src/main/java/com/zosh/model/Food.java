@@ -35,6 +35,8 @@ public class Food {
     private boolean available;
 
     @ManyToOne
+    @JoinColumn(name = "restaurant_id", nullable = false)
+
     private  Restaurant restaurant;
 
     private  boolean isVegetarian;
