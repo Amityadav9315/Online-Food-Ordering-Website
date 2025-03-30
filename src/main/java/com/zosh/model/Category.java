@@ -34,6 +34,9 @@ public class Category {
     private int resturantcontactInformation;
 
 
-    private int
+    private int orderQuantity;
+    private int noofOrder;
+
+    pr
 
 }
