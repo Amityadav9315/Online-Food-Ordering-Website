@@ -39,6 +39,8 @@ public class Category {
 
     private int orderTime;
 
+    private int orderDate;
+
 
 
 }
