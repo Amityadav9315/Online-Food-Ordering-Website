@@ -26,4 +26,14 @@ public class Category {
     private String bufferreader;
     private String datacollector;
 
+
+    private String deliveryboy;
+
+    private int  resturantcost;
+
+    private int resturantcontactInformation;
+
+
+    private int
+
 }
