@@ -19,7 +19,8 @@ public class Category {
     private String age;
     private int rollno;
     private String eduacation;
-    private i
+    private int  money;
+    private int subject;
 
     private  String name;
 
