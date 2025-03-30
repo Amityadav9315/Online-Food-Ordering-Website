@@ -23,6 +23,9 @@ public class Category {
     private int subject;
 
     private  String name;
+    private String gap;
+    private String group;
+
 
 
     @ManyToOne
