@@ -37,6 +37,8 @@ public class Category {
     private int orderQuantity;
     private int noofOrder;
 
-    pr
+    private int orderTime;
+
+
 
 }
