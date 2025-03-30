@@ -16,20 +16,14 @@ public class Category {
     @Id
     @GeneratedValue(strategy= GenerationType.AUTO)
     private Long id;
-    private String age;
-    private int rollno;
-    private String eduacation;
-    private int  money;
-    private int subject;
-
-    private  String name;
-    private String gap;
-    private String group;
-
-
-
     @ManyToOne
     @JsonIgnore
     private Restaurant restaurant;
+
+    private String resturantname;
+    private String systemname;
+
+    private String bufferreader;
+    private String datacollector;
 
 }
