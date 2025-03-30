@@ -16,6 +16,10 @@ public class Category {
     @Id
     @GeneratedValue(strategy= GenerationType.AUTO)
     private Long id;
+    private String age;
+    private int rollno;
+    private String eduacation;
+    private i
 
     private  String name;
 
