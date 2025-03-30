@@ -26,6 +26,7 @@ public class IngredientCategory {
     private Restaurant restaurant;
 
     private String Username;
+    private String UserDetails;
 
     @OneToMany(mappedBy = "category",cascade = CascadeType.ALL)
     private List<IngredientsItem> ingredients=new ArrayList<>();
